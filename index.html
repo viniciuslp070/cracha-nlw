@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+  <head>
+    <title>Vinícius Poloniato - DoWhile 2021</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span><img src="./images/selo.svg" alt="Selo Rocketseat" /></span>
+          <img id="foto" src="./images/avatar.png" alt="Foto pessoal" />
+        </div>
+        <h1 id="userName">Vinícius Poloniato</h1>
+        <a href="https://github.com/viniciuslp070" target="_blank">
+          <img src="./images/github.svg" alt="Ícone GitHub" />viniciuslp070</a
+        >
+        <p>An instructor focused on helping pople start programming for web</p>
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com" target="_blank">
+              <img src="./images/youtube.svg" alt="Ícone YouTube"
+            /></a>
+          </li>
+          <li class="instagram">
+            <a href="https://instagram.com/viniciuspoloniato" target="_blank">
+              <img src="./images/instagram.svg" alt="Ícone Instagram"
+            /></a>
+          </li>
+          <li class="facebook">
+            <a href="https://facebook.com/viniciuspoloniato" target="_blank">
+              <img src="./images/facebook.svg" alt="Ícone Facebook"
+            /></a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/vinipoloniato" target="_blank">
+              <img src="./images/twitter.svg" alt="Ícone Twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script>
+      const linksSocialMedia = {
+        github: 'viniciuslp070',
+        youtube: 'UChcjqECIsA3eT8j4J5GJh8g',
+        facebook: 'viniciuspoloniato',
+        instagram: 'viniciuspoloniato',
+        twitter: 'vinipoloniato'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of sociaLinks.children) {
+          const social = li.Attribute('class')
+
+          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+        }
+      }
+    </script>
+  </body>
+</html>
