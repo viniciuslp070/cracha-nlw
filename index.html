@@ -16,13 +16,20 @@
       <div class="container">
         <div class="avatar">
           <span><img src="./images/selo.svg" alt="Selo Rocketseat" /></span>
-          <img id="foto" src="./images/avatar.png" alt="Foto pessoal" />
+          <img
+            id="foto"
+            src="https://lorempixel.com/185/185/people"
+            alt="Foto pessoal"
+          />
         </div>
-        <h1 id="userName">Vinícius Poloniato</h1>
-        <a href="https://github.com/viniciuslp070" target="_blank">
-          <img src="./images/github.svg" alt="Ícone GitHub" />viniciuslp070</a
-        >
-        <p>An instructor focused on helping pople start programming for web</p>
+        <h1 id="userName">Mayk Brito</h1>
+        <a id="userLink" href="https://github.com/maykbrito" target="_blank">
+          <img src="./images/github.svg" alt="Ícone GitHub" />
+          <span id="userLogin">maykbrito</span>
+        </a>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
         <ul id="socialLinks">
           <li class="youtube">
             <a href="https://youtube.com" target="_blank">
@@ -30,17 +37,17 @@
             /></a>
           </li>
           <li class="instagram">
-            <a href="https://instagram.com/viniciuspoloniato" target="_blank">
+            <a href="https://instagram.com/maykbrito" target="_blank">
               <img src="./images/instagram.svg" alt="Ícone Instagram"
             /></a>
           </li>
           <li class="facebook">
-            <a href="https://facebook.com/viniciuspoloniato" target="_blank">
+            <a href="https://facebook.com/maykbrito" target="_blank">
               <img src="./images/facebook.svg" alt="Ícone Facebook"
             /></a>
           </li>
           <li class="twitter">
-            <a href="https://twitter.com/vinipoloniato" target="_blank">
+            <a href="https://twitter.com/maykbrito" target="_blank">
               <img src="./images/twitter.svg" alt="Ícone Twitter"
             /></a>
           </li>
@@ -48,22 +55,6 @@
       </div>
     </main>
 
-    <script>
-      const linksSocialMedia = {
-        github: 'viniciuslp070',
-        youtube: 'UChcjqECIsA3eT8j4J5GJh8g',
-        facebook: 'viniciuspoloniato',
-        instagram: 'viniciuspoloniato',
-        twitter: 'vinipoloniato'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of sociaLinks.children) {
-          const social = li.Attribute('class')
-
-          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-        }
-      }
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
