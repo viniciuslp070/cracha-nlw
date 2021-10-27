@@ -89,7 +89,7 @@ ul {
   }
 
   main {
-    background: url(images/desktop.svg) no-repeat center/cover;
+    background: url(./images/desktop.svg) no-repeat center/cover;
   }
 
   h1,
